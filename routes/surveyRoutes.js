@@ -28,7 +28,7 @@ module.exports= app => {
 			_user: req.user.id,
 			dateSent: Date.now()
 		});
-
+		//res.send('inside before mailer.......');
 		///Great place to send an email!!
 		const mailer= new Mailer(survey, surveyTemplate(survey));
 		try {
